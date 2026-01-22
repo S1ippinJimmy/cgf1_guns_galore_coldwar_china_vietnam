@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_LMG_MagFed_T1">
+		<defName>CGF1_MWP_Gaizhuang_ZB_vz26_SideFeed_</defName>
+		<label>Gǎizhuāng ZB vz.26 Side-Feed</label>
+		<description>Caliber: 7.92x57mmMauser. 20-round detachable mag. Select-Fire.
+		
+This is a Czech ZB vz.26 LMG modified by Chinese gunsmiths to feed its magazines from the side rather than from the top. Such a conversion is rather unusual for the period and was performed for an unknown purpose, as such weapons never appear to have been used (and therefore the conversions were not likely successful or impactful.)</description>
+		<graphicData>
+			<texPath>CGF1/Gun/Gaizhuang_ZB_vz26_SideFeed</texPath>
+			<drawSize>1.05</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T8_AtomicAgeFirearms</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>75</Steel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>45000</WorkToMake>
+			<Mass>9.4</Mass>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.60</AccuracyMedium>
+			<AccuracyLong>0.50</AccuracyLong>
+			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>40</equippedAngleOffset>
+		<weaponTags>
+			<li>CGF1_LMG_Military</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_GunsGalore_ColdWarChinaVietnam</li>
+			<li>CGF1_GunsGalore_ColdWarChinaVietnam_LMG</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bullet_792x57mmMauser_Auto</defaultProjectile>
+				<warmupTime>1.8</warmupTime>
+				<range>30.9</range>
+				<burstShotCount>6</burstShotCount>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+				<soundCast>CGF1_GG_SFXR_Rifle4</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>11</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="issaczhuang.muzzleflash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(1.0,1.0)</drawSize>
+				<offsets>
+					<li>(0.56,0.04)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+		<generateCommonality>0.0125</generateCommonality> <!-- Rare -->
+		<thingSetMakerTags>
+			<li>CGF1_GunsGalore_RewardAncient_Prototype</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+</Defs>

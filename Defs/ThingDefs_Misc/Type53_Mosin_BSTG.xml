@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_Rifle_BoltAction_T1_Carbine">
+		<defName>CGF1_MWP_Type53_Mosin_BSTG_</defName>
+		<label>Type 53 Mosin BSTG</label>
+		<description>Caliber: 7.62x39mm. 1-round internal mag. Bolt-Action.
+		
+The Type 53 BSTG, known by western collectors as the "Type 53 Initial Bullet Speed Trial Gun," is a conversion of the Chinese Type 53 Mosin to a single-shot 7.62x39mm rifle. As its name suggests, it was used to test the newly adopted 7.62x39mm cartridge. Only a single digit number of the rifles are known to have ever been produced, making them extremely rare.</description>
+		<graphicData>
+			<texPath>CGF1/Gun/Type53_Mosin_BSTG</texPath>
+			<drawSize>1.05</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T8_AtomicAgeFirearms</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>50</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>3.3</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.80</AccuracyMedium>
+			<AccuracyLong>0.70</AccuracyLong>
+			<RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>40</equippedAngleOffset>
+		<weaponTags>
+			<li>CGF1_Rifle_Civilian</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>LongShots</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_GunsGalore_ColdWarChinaVietnam</li>
+			<li>CGF1_GunsGalore_ColdWarChinaVietnam_Rifle</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bullet_762x39mm_Rifle</defaultProjectile>
+				<warmupTime>1.5</warmupTime>
+				<range>36.9</range>
+				<soundCast>CGF1_GG_SFXR_Rifle5</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="issaczhuang.muzzleflash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.9,0.9)</drawSize>
+				<offsets>
+					<li>(0.56,0.08)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+		<generateCommonality>0.0050</generateCommonality> <!-- Ultra Rare -->
+	</ThingDef>
+	
+</Defs>

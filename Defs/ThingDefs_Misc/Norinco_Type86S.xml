@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_AssaultRifle_T1">
+		<defName>CGF1_MWP_Norinco_Type86S_</defName>
+		<label>Norinco Type 86S</label>
+		<description>Caliber: 7.62x39mm. 30-round detachable mag. Semi-Automatic.
+		
+The Norinco Type 86S is a Chinese bullpup rifle based on the Type 56 Kalashnikov. It is one of several bullpup configuration weapons that were tested by the PLA in the 1980s and was developed off of earlier rifles known as the WTC1 and WTC2. Intending to capitalize on the presumptive popularity of bullpups (like the recently designed FAMAS, Steyr AUG, and SA80), the Type 86S was marketed to civilians around the world. It was only somewhat successful, with around 2000 being imported into the US before exports ceased due to the 1994 Assault Weapons Ban - furthermore, the quality of the rifles produced was mixed at best. Nevertheless, the rifles still in the hands of collectors have a decent value in the present due to their scarcity.</description>
+		<graphicData>
+			<texPath>CGF1/Gun/Norinco_Type86S</texPath>
+			<drawSize>1.00</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T9_SpaceAgeFirearms</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>60</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>3.6</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.60</AccuracyShort>
+			<AccuracyMedium>0.55</AccuracyMedium>
+			<AccuracyLong>0.50</AccuracyLong>
+			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>40</equippedAngleOffset>
+		<weaponTags>
+			<li>CGF1_Rifle_Civilian</li>
+			<li>CGF1_Rifle_Military</li>
+			<li>CGF1_Rifle_Military_Advanced</li>
+		</weaponTags>
+		<tradeTags>
+			<li>CGF1_GunsGalore_ColdWarChinaVietnam</li>
+			<li>CGF1_GunsGalore_ColdWarChinaVietnam_AR</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bullet_762x39mm_Rifle</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>30.9</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+				<soundCast>CGF1_GG_SFXR_Rifle2</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="issaczhuang.muzzleflash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.8,0.8)</drawSize>
+				<offsets>
+					<li>(0.45,0.06)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+		<generateCommonality>0.05</generateCommonality> <!-- Uncommon -->
+	</ThingDef>
+	
+</Defs>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_SemiAutoRifle_T2">
+		<defName>CGF1_MWP_Norinco_SKS_Para_Sporter_</defName>
+		<label>Norinco SKS Para Sporter</label>
+		<description>Caliber: 7.62x39mm. 30-round detachable mag. Semi-Automatic.
+		
+This is a variation of the Chinese Type 56 SKS exported to foreign civilian markets by the North China Industries Corporation (or Norinco Group as it is popularly known.) Many such exported SKS rifles were modified to comply with regulations and restrictions on imported firearms; this one has a shortened "paratrooper" barrel, has been fitted with a thumbhole stock, made compatible with detachable AK-type magazines, and had its internal bayonet removed.</description>
+		<graphicData>
+			<texPath>CGF1/Gun/Norinco_SKS_Para_Sporter</texPath>
+			<drawSize>0.95</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T9_SpaceAgeFirearms</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>55</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>3.95</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>40</equippedAngleOffset>
+		<weaponTags>
+			<li>CGF1_Rifle_Civilian</li>
+		</weaponTags>
+		<tradeTags>
+			<li>CGF1_GunsGalore_ColdWarChinaVietnam</li>
+			<li>CGF1_GunsGalore_ColdWarChinaVietnam_Rifle</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bullet_762x39mm_Rifle</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>30.9</range>
+				<soundCast>CGF1_MWP_SFX_Rifle_Semi5</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="issaczhuang.muzzleflash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.8,0.8)</drawSize>
+				<offsets>
+					<li>(0.56,0.06)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+		<generateCommonality>0.5</generateCommonality> <!-- Abundant -->
+	</ThingDef>
+	
+</Defs>

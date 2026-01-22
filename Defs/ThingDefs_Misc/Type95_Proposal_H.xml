@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_AssaultRifle_T0">
+		<defName>CGF1_MWP_Type95_Proposal_H_</defName>
+		<label>Type 95 Proposal H</label>
+		<description>Caliber: 5.8x42mm. 30-round detachable mag. Select-Fire.
+		
+This rifle is one of numerous designs that were submitted to the PLA during the early 1990s trials to adopt a new standard infantry arm. The PLA had experimented with a lighter intermediate cartridge in the 5.8x42mm round since the 1980s, developed with a similar mentality to the American 5.56x45mm and Soviet 5.45x39mm cartridges, but was still largely reliant on the 7.62x39-caliber Type 81. The potential replacement would use this new caliber, and additionally, it was evidently desired that the new rifle would be a bullpup (as the final production QBZ-95 ended up being.) This rifle is an example of one proposal that was submitted but ultimately rejected.</description>
+		<graphicData>
+			<texPath>CGF1/Gun/Type95_Proposal_H</texPath>
+			<drawSize>1.00</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T10_ModernFirearms</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>60</Steel>
+			<ComponentIndustrial>7</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>40000</WorkToMake>
+			<Mass>3.55</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>40</equippedAngleOffset>
+		<weaponTags>
+			<li>CGF1_AR_Military</li>
+			<li>CGF1_AR_Military_Advanced</li>
+		</weaponTags>
+		<tradeTags>
+			<li>CGF1_GunsGalore_ColdWarChinaVietnam</li>
+			<li>CGF1_GunsGalore_ColdWarChinaVietnam_AR</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bullet_58x42mmDBP10_Auto</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>30.9</range>
+				<burstShotCount>4</burstShotCount>
+				<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+				<soundCast>CGF1_GG_SFXR_Rifle3</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="issaczhuang.muzzleflash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.6,0.6)</drawSize>
+				<offsets>
+					<li>(0.5,0.04)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+		<generateCommonality>0.0125</generateCommonality> <!-- Rare -->
+		<thingSetMakerTags>
+			<li>CGF1_GunsGalore_RewardAncient_Prototype</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+</Defs>

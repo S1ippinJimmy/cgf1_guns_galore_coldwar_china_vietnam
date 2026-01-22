@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_Pistol_Compact_T1">
+		<defName>CGF1_MWP_Type64_Pistol_</defName>
+		<label>Type 64 Pistol</label>
+		<description>Caliber: 7.62x17mm Rimless. 7-round detachable mag. Semi-Automatic.
+	
+The Type 64 (not to be confused with the Type 64 Silenced) is a Chinese compact pistol developed in the 1960s, developed as a successor to the earlier Type 52. The Type 64 shoots a unique 7.62x17mm Rimless round, very similar but not interchangeable with the .32 ACP - the round and the weapon were specially designed to be used in very close quarters situations where overpenetration was a massive risk, chiefly, aboard airplanes. Consequently, pistols like the Type 64 proved pretty popular with Chinese special police units, and some may remain in service to the present day.</description>
+		<graphicData>
+			<texPath>CGF1/Gun/Type64_Pistol</texPath>
+			<drawSize>0.90</drawSize>
+		</graphicData>
+		<uiIconScale>1.4</uiIconScale>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T8_AtomicAgeFirearms</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>0.9</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.35</AccuracyMedium>
+			<AccuracyLong>0.30</AccuracyLong>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>CGF1_Pistol_Civilian</li>
+			<li>CGF1_Pistol_Military</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>RangedLight</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_GunsGalore_ColdWarChinaVietnam</li>
+			<li>CGF1_GunsGalore_ColdWarChinaVietnam_Pistol</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bullet_762x17mmRimless_Pistol</defaultProjectile>
+				<warmupTime>0.15</warmupTime>
+				<range>25.9</range>
+				<soundCast>CGF1_GG_SFXR_Pistol4</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="issaczhuang.muzzleflash">
+				<def>MF_StandardMuzzleFalshTwo</def>
+				<drawSize>(0.8,0.8)</drawSize>
+				<offsets>
+					<li>(0.20,0.15)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+		<generateCommonality>0.10</generateCommonality> <!-- Average -->
+	</ThingDef>
+	
+	<ThingDef ParentName="CGF1_MWP_Pistol_Compact_T1">
+		<defName>CGF1_MWP_Type64_Pistol_SD_</defName>
+		<label>Type 64 Pistol (SD)</label>
+		<description>Caliber: 7.62x17mm Rimless. 7-round detachable mag. Semi-Automatic.
+	
+The Type 64 (not to be confused with the Type 64 Silenced) is a Chinese compact pistol developed in the 1960s, developed as a successor to the earlier Type 52. The Type 64 shoots a unique 7.62x17mm Rimless round, very similar but not interchangeable with the .32 ACP - the round and the weapon were specially designed to be used in very close quarters situations where overpenetration was a massive risk, chiefly, aboard airplanes. Consequently, pistols like the Type 64 proved pretty popular with Chinese special police units, and some may remain in service to the present day.</description>
+		<graphicData>
+			<texPath>CGF1/Gun/UP/Type64_Pistol_SD</texPath>
+			<drawSize>0.90</drawSize>
+		</graphicData>
+		<uiIconScale>1.4</uiIconScale>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T8_AtomicAgeFirearms</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>1.1</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.35</AccuracyMedium>
+			<AccuracyLong>0.30</AccuracyLong>
+			<RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+		</statBases>
+		<weaponTags>
+			<li>CGF1_Pistol_Military</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>RangedLight</li>
+		</weaponClasses>
+		<tradeTags Inherit="False">
+			<li>CGF1_GunsGalore_NoSpawn</li>
+		</tradeTags>
+		<equippedStatOffsets>
+			<HuntingStealth>0.5</HuntingStealth>
+		</equippedStatOffsets>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bullet_762x17mmRimless_Pistol</defaultProjectile>
+				<warmupTime>0.15</warmupTime>
+				<range>25.9</range>
+				<soundCast>CGF1_MWP_SFX_SMG_SD1</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<generateCommonality>0.0050</generateCommonality> <!-- Ultra Rare -->
+		<thingSetMakerTags Inherit="False"/>
+	</ThingDef>
+</Defs>

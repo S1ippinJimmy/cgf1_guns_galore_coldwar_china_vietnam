@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_Shotgun_Improvised">
+		<defName>CGF1_MWP_VC_Handmade_BoltShotgun_</defName>
+		<label>VC Handmade Bolt Shotgun</label>
+		<description>Caliber: 12 Gauge. 2-round internal mag. Bolt-Action.</description>
+		<graphicData>
+			<texPath>CGF1/Gun/VC_Handmade_BoltShotgun</texPath>
+			<drawSize>0.95</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+				<li>CraftingSpot</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T4_ImprovisedWeapons</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+			<Mass>3</Mass>
+			<AccuracyTouch>0.70</AccuracyTouch>
+			<AccuracyShort>0.77</AccuracyShort>
+			<AccuracyMedium>0.67</AccuracyMedium>
+			<AccuracyLong>0.67</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>40</equippedAngleOffset>
+		<weaponTags>
+			<li>CGF1_Shotgun_Improvised</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>ShortShots</li>
+		</weaponClasses>
+		<tradeTags Inherit="False">
+			<li>CGF1_GunsGalore_NoSpawn</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bullet_12Gauge_Slug_Shotgun</defaultProjectile>
+				<warmupTime>1.1</warmupTime>
+				<range>15.9</range>
+				<soundCast>CGF1_GG_SFXR_Shotgun1</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="issaczhuang.muzzleflash">
+				<def>MF_StandardMuzzleFalshTwo</def>
+				<drawSize>(1.2,1.2)</drawSize>
+				<offsets>
+					<li>(0.45,0.11)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+		<generateCommonality>0.05</generateCommonality> <!-- Uncommon -->
+		<thingSetMakerTags Inherit="False"/>
+	</ThingDef>
+</Defs>

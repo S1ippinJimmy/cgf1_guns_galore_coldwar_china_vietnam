@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_Rifle_BoltAction_T1">
+		<defName>CGF1_MWP_Gaizhuang_Type_Zhongzheng_</defName>
+		<label>Gǎizhuāng Type Zhongzheng</label>
+		<description>Caliber: 7.62x39mm. 5-round internal mag. Bolt-Action.
+		
+This is a ROC Type Zhongzheng Mauser converted to 7.62x39mm caliber. Conversions of weapons like this one were performed in the 1960s by the People's Liberation Army in large quantities with the aim of simplifying logistics - with the Civil War having ended a decade prior, the mainland was left with an incredibly large quantity of weapons from various sources (Foreign supplies from the US, USSR, Germany, and Britain, captured Japanese equipment, leftover ROC weaponry, etc.) As existing weapons encompassed dozens of calibers, PLA officials looked for ways to make these weapons viable to continue using, and that constituted converting many weapons to fire either 7.62x39mm or 7.62 Tokarev, rounds that had become standardized in the new military.\nHowever, such conversions were evidently short lived, as the PLA opted to use domestic-produced weapons. Thus, most of these conversions remain only in museums or as drawings.</description>
+		<graphicData>
+			<texPath>CGF1/Gun/Gaizhuang_Type_Zhongzheng</texPath>
+			<drawSize>1.00</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T8_AtomicAgeFirearms</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>55</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>4.08</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.90</AccuracyMedium>
+			<AccuracyLong>0.80</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>40</equippedAngleOffset>
+		<weaponTags>
+			<li>CGF1_Rifle_Civilian</li>
+			<li>CGF1_Rifle_Military</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>LongShots</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_GunsGalore_ColdWarChinaVietnam</li>
+			<li>CGF1_GunsGalore_ColdWarChinaVietnam_Rifle</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bullet_762x39mm_Rifle</defaultProjectile>
+				<warmupTime>1.7</warmupTime>
+				<range>36.9</range>
+				<soundCast>CGF1_GG_SFXR_Rifle5</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="issaczhuang.muzzleflash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.9,0.9)</drawSize>
+				<offsets>
+					<li>(0.56,0.08)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+		<generateCommonality>0.0125</generateCommonality> <!-- Rare -->
+		<thingSetMakerTags>
+			<li>CGF1_GunsGalore_RewardAncient_Prototype</li>
+		</thingSetMakerTags>
+	</ThingDef>
+	
+</Defs>

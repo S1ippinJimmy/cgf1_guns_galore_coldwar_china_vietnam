@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_ATLauncher_T2">
+		<defName>CGF1_MWP_B40_RPG_</defName>
+		<label>B-40 RPG</label>
+		<description>Caliber: 82mm PG-2. 1-round tube. Single-Shot.
+		
+The B-40 rocket-propelled grenade launcher is a copy of the Chinese Type 56 RPG, which is itself a copy of the Soviet RPG-2. The B-40 and its predecessors were all widely used by the North Vietnamese Army and associated forces during the Vietnam War as their standard portable anti-tank weapons. Even as heavier and more effective platforms like the RPG-7 and Type 69 began to be introduced, Vietnam retained the B-40, and purportedly still has them in inventory even in the present.</description>
+		<graphicData>
+			<texPath>CGF1/Gun/B40_RPG</texPath>
+			<drawSize>1.05</drawSize>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T8_AtomicAgeFirearms</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>55</Steel>
+			<ComponentIndustrial>11</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>45000</WorkToMake>
+			<Mass>4.67</Mass>
+			<RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>40</equippedAngleOffset>
+		<weaponTags>
+			<li>CGF1_Launcher_Military</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_GunsGalore_ColdWarChinaVietnam</li>
+			<li>CGF1_GunsGalore_ColdWarChinaVietnam_Launcher</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bullet_82mm_PG2_</defaultProjectile>
+				<forcedMissRadius>2.9</forcedMissRadius>
+				<warmupTime>4.25</warmupTime>
+				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+				<range>30.9</range>
+				<soundCast>CGF1_MWP_SFX_Launcher_RPG</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<onlyManualCast>true</onlyManualCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>3.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>11.7</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+		<generateCommonality>0.05</generateCommonality> <!-- Uncommon -->
+	</ThingDef>
+	
+</Defs>

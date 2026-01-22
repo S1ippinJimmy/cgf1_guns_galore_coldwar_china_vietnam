@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_BaseMakeableMeleeWeapon">
+		<defName>CGF1_MWP_Type80_Knife</defName>
+		<label>Type 80 Knife</label>
+		<description>A specialized Chinese combat knife that was designed for integration into weapons like the Type 80 machine pistol.</description>
+		<graphicData>
+			<texPath>CGF1/Melee/Type80_Knife</texPath>
+			<drawSize>0.85</drawSize>
+			<graphicClass>Graphic_Single</graphicClass>	
+		</graphicData>
+		<techLevel>Industrial</techLevel>
+		<recipeMaker>
+			<recipeUsers>
+				<li>FueledSmithy</li>
+				<li>ElectricSmithy</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T9_SpaceAgeMelee</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>35</Steel>
+		</costList>
+		<statBases>
+			<WorkToMake>5000</WorkToMake>
+			<Mass>0.5</Mass>
+		</statBases>
+		<equippedStatOffsets>
+			<ButcheryFleshSpeed>0.10</ButcheryFleshSpeed>
+			<ButcheryFleshEfficiency>0.05</ButcheryFleshEfficiency>
+		</equippedStatOffsets>
+		<relicChance>0</relicChance>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<weaponTags Inherit="False">
+			<li>CGF1_Weapon_Pirate_Thrasher</li>
+			<li>CGF1_Weapon_Mercenary_Slasher</li>
+			<li>CGF1_Weapon_Outlander_Villager</li>
+			<li>CGF1_Weapon_Ideology_Outlander</li>
+			<li>CGF1_Weapon_AncientSoldier_Armory</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>Melee</li>
+			<li>MeleePiercer</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_GunsGalore_ColdWarChinaVietnam_Melee</li>
+		</tradeTags>
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			 <li>
+				<label>blade</label>
+				<capacities>
+				  <li>Cut</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>1.5</cooldownTime>
+			  </li>
+			  <li>
+				<label>point</label>
+				<capacities>
+				  <li>Stab</li>
+				</capacities>
+				<power>14</power>
+				<cooldownTime>2</cooldownTime>
+			  </li>
+		</tools>
+		<generateCommonality>0.05</generateCommonality> <!-- Uncommon -->
+	</ThingDef>
+	
+</Defs>

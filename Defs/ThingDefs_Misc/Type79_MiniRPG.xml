@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_ATLauncher_Disposable_T1">
+		<defName>CGF1_MWP_Type79_MiniRocketLauncher_</defName>
+		<label>Type 79 Mini Rocket Launcher</label>
+		<description>Caliber: 70mm Type 79. 1-round tube. Single Use.
+		
+The Type 79 Mini Rocket Launcher is a Chinese disposable anti-tank weapon developed in the 1970s. They were intended to be made as a mass-produced and very lightweight weapon that could be carried by almost all PLA soldiers in a combat zone, providing anti-tank capabilities across the board. However, the production quality of the launchers was relatively poor and the developmental process lasted nearly a decade, causing the Type 79 to never see serious widespread issue.</description>
+		<graphicData>
+			<texPath>CGF1/Gun/Type79_MiniRPG</texPath>
+			<drawSize>0.90</drawSize>
+		</graphicData>
+		<tickerType>Normal</tickerType>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T9_SpaceAgeFirearms</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>30</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<Mass>1.15</Mass>
+			<RangedWeapon_Cooldown>4.5</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>40</equippedAngleOffset>
+		<weaponTags>
+			<li>CGF1_Launcher_Military</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_GunsGalore_ColdWarChinaVietnam</li>
+			<li>CGF1_GunsGalore_ColdWarChinaVietnam_Launcher</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_ShootOneUse</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bullet_70mm_Type79_</defaultProjectile>
+				<forcedMissRadius>2.9</forcedMissRadius>
+				<warmupTime>4</warmupTime>
+				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
+				<range>30.9</range>
+				<soundCast>CGF1_MWP_SFX_Launcher_LAW</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<onlyManualCast>true</onlyManualCast>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>3.9</explosiveRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+			</li>
+		</comps>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>11.7</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="issaczhuang.muzzleflash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(1.2,1.2)</drawSize>
+				<offsets>
+					<li>(0.55,0.0)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+		<generateCommonality>0.05</generateCommonality> <!-- Uncommon -->
+		<thingSetMakerTags Inherit="False"/>
+	</ThingDef>
+	
+</Defs>

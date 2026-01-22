@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_LMG_MagFed_T1">
+		<defName>CGF1_MWP_Norinco_MAK91_Ext_</defName>
+		<label>Norinco MAK-91 (Ext)</label>
+		<description>Caliber: 7.62x39mm. 40-round detachable mag. Semi-Automatic.
+		
+Literally meaning the "Model of AK"-91, the Norinco MAK-91 is one name for the semi-automatic locked civilian Type 56 rifles (in an LMG-esque configuration) exported by the North China Industries Corporation (Norinco.) In order to comply with restrictions and regulations on imported firearms, many of the MAK-91s were modified before or after importation - this model has been fitted with a thumbhole stock, for sale in a locale where pistol grips were banned on semi-automatic rifles.</description>
+		<graphicData>
+			<texPath>CGF1/Gun/Norinco_MAK91_Ext</texPath>
+			<drawSize>1.01</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T9_SpaceAgeFirearms</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>70</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>30000</WorkToMake>
+			<Mass>5.2</Mass>
+			<AccuracyTouch>0.50</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.60</AccuracyMedium>
+			<AccuracyLong>0.50</AccuracyLong>
+			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>40</equippedAngleOffset>
+		<weaponTags>
+			<li>CGF1_Rifle_Civilian</li>
+			<li>CGF1_Rifle_Military</li>
+			<li>CGF1_LMG_Military</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_GunsGalore_ColdWarChinaVietnam</li>
+			<li>CGF1_GunsGalore_ColdWarChinaVietnam_Rifle</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bullet_762x39mm_Rifle</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>30.9</range>
+				<soundCast>CGF1_MWP_SFX_Rifle_Auto6</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="issaczhuang.muzzleflash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.7,0.7)</drawSize>
+				<offsets>
+					<li>(0.58,0.06)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+		<generateCommonality>0.0125</generateCommonality> <!-- Rare -->
+	</ThingDef>
+</Defs>

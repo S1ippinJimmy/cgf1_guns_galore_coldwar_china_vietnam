@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_AssaultRifle_T1">
+		<defName>CGF1_MWP_Type56_1_QLG91_</defName>
+		<label>Type 56-1 QLG-91</label>
+		<description>Caliber: 7.62x39mm. 30-round detachable mag. Select-Fire.
+		
+The Type 56 is a Chinese copy of the Soviet Avtomat Kalashnikov (AK) rifle. Though almost a 1:1 copy of the Type III AK, the Type 56 has some notable differences - notably, most are found with stamped (like on the AKM) rather than milled receivers, and the Type 56 has a distinctive enclosed hooded front sight. Type 56 rifles also often feature their own integral folding bayonets (though this rifle does not have one, instead using a typical AKM-style bayonet.) Chinese AKs are among the most common in the world today, Type 56 rifles in their original configuration are still produced.
+
+This variant is a Type 56-1, a copy of the AKS rifle which features an underfolding stock. Fitted with a QLG-91 35mm grenade launcher.</description>
+		<graphicData>
+			<texPath>CGF1/Gun/Type56-1_QLG91</texPath>
+			<drawSize>1.01</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T9_SpaceAgeFirearms</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>70</Steel>
+			<ComponentIndustrial>9</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>50000</WorkToMake>
+			<Mass>4.4</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.60</AccuracyShort>
+			<AccuracyMedium>0.55</AccuracyMedium>
+			<AccuracyLong>0.50</AccuracyLong>
+			<RangedWeapon_Cooldown>1.7</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>40</equippedAngleOffset>
+		<weaponTags>
+			<li>CGF1_AR_Military</li>
+		</weaponTags>
+		<tradeTags>
+			<li>CGF1_GunsGalore_ColdWarChinaVietnam</li>
+			<li>CGF1_GunsGalore_ColdWarChinaVietnam_AR</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bullet_762x39mm_Auto</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>30.9</range>
+				<burstShotCount>4</burstShotCount>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+				<soundCast>CGF1_GG_SFXR_Rifle2</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<label>Type 56-1</label>
+				<commandIcon>CGF1/Gun/Type56-1_QLG91</commandIcon>
+			</li>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bullet_35x115mm_Grenade</defaultProjectile>
+				<warmupTime>3.5</warmupTime>
+				<range>20.9</range>
+				<forcedMissRadius>1.9</forcedMissRadius>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>CGF1_MWP_SFX_GrenadeLauncher1</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>2</muzzleFlashScale>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<onlyManualCast>true</onlyManualCast>
+				<label>QLG-91B</label>
+				<commandIcon>CGF1/Underbarrel/QLG91B</commandIcon>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="issaczhuang.muzzleflash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.8,0.8)</drawSize>
+				<offsets>
+					<li>(0.52,0.04)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+		<comps>
+			<li Class="MVCF.Comps.CompProperties_VerbProps">
+				<compClass>MVCF.Comps.Comp_VerbProps</compClass>
+				<verbProps>
+					<li>
+						<label>Type 56-1</label>
+						<canBeToggled>true</canBeToggled>
+						<separateToggle>false</separateToggle>
+					</li>
+					<li>
+						<label>QLG-91B</label>
+						<canBeToggled>true</canBeToggled>
+						<separateToggle>false</separateToggle>
+						<description>Caliber: 35x115mm. 1-round tube. Single shot.					
+The QLG-91 is a Chinese grenade launcher similar in appearance to the American M203. The design is rather ubiquitous as it can be mounted on most Chinese service weapons of the 20th and 21st century, including the Type 56, Type 81, and QBZ-95.</description>
+					</li>
+				</verbProps>
+			</li>
+		</comps>
+		<generateCommonality>0.05</generateCommonality> <!-- Uncommon -->
+	</ThingDef>
+	
+</Defs>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_Rifle_BoltAction_T1_Carbine">
+		<defName>CGF1_MWP_Type53_Mosin_</defName>
+		<label>Type 53 Mosin</label>
+		<description>Caliber: 7.62x54mmR. 5-round internal mag. Bolt-Action.
+		
+The Type 53 is a Chinese licensed copy of the Soviet Mosin-Nagant M44 carbine, which saw service from the early 1950s into the 1960s before it was mostly replaced by the Type 56 SKS and Type 56 AK. Following its eventual replacement, the Type 53s were widely exported to China's various political allies across the world, making them a common sight in various conflicts. The Type 53 is quite interesting, as it was the only Mosin variant to be widely produced in China - the full-sized 91/30, despite being more common during World War II and a common weapon in the hands of Soviet allies following the conflict, was never produced in China.</description>
+		<graphicData>
+			<texPath>CGF1/Gun/Type53_Mosin</texPath>
+			<drawSize>1.05</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T8_AtomicAgeFirearms</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>55</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>12000</WorkToMake>
+			<Mass>4.09</Mass>
+			<AccuracyTouch>0.65</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.80</AccuracyMedium>
+			<AccuracyLong>0.70</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>40</equippedAngleOffset>
+		<weaponTags>
+			<li>CGF1_Rifle_Civilian</li>
+			<li>CGF1_Rifle_Military</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>LongShots</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_GunsGalore_ColdWarChinaVietnam</li>
+			<li>CGF1_GunsGalore_ColdWarChinaVietnam_Rifle</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bullet_762x54mmR_Rifle</defaultProjectile>
+				<warmupTime>1.5</warmupTime>
+				<range>36.9</range>
+				<soundCast>CGF1_MWP_SFX_Rifle_Bolt2</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="issaczhuang.muzzleflash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.9,0.9)</drawSize>
+				<offsets>
+					<li>(0.56,0.08)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+		<generateCommonality>0.5</generateCommonality> <!-- Abundant -->
+	</ThingDef>
+	
+</Defs>

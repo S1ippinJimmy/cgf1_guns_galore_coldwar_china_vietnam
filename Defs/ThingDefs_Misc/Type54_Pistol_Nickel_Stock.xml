@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_PistolCarbine_SemiAuto_T1">
+		<defName>CGF1_MWP_Type54_Pistol_Nickel_Stock_</defName>
+		<label>Type 54 Pistol Nickel Stock</label>
+		<description>Caliber: 7.62x25mm Tokarev. 8-round detachable mag. Semi-Automatic.
+		
+The Type 54 is a Chinese copy of the Soviet Tokarev TT-33 pistol, replacing the earlier Type 51 copy of the same gun. The Type 54 proved to be an extremely successful weapon both within the PLA and with China's many export customers on the military and civilian markets. Modernized variations of the Type 54 continue to be produced for export sales even in the present, and Chinese Tokarevs from all eras continue to appear in conflicts around the globe.
+
+This one is fitted with an unusual detachable combination knife stock, similar to the one used on the Type 80 Machine Pistol.</description>
+		<graphicData>
+			<texPath>CGF1/Gun/Type54_Pistol_Nickel_Stock</texPath>
+			<drawSize>0.95</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T8_AtomicAgeFirearms</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>35</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>12500</WorkToMake>
+			<Mass>2.1</Mass>
+			<AccuracyTouch>0.85</AccuracyTouch>
+			<AccuracyShort>0.65</AccuracyShort>
+			<AccuracyMedium>0.45</AccuracyMedium>
+			<AccuracyLong>0.30</AccuracyLong>
+			<RangedWeapon_Cooldown>1.1</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>40</equippedAngleOffset>
+		<weaponTags>
+			<li>CGF1_Pistol_Military</li>
+		</weaponTags>
+		<weaponClasses>
+			<li>RangedLight</li>
+		</weaponClasses>
+		<tradeTags>
+			<li>CGF1_GunsGalore_ColdWarChinaVietnam</li>
+			<li>CGF1_GunsGalore_ColdWarChinaVietnam_Pistol</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bullet_762x25mmTokarev_Pistol</defaultProjectile>
+				<warmupTime>0.9</warmupTime>
+				<range>25.9</range>
+				<soundCast>CGF1_MWP_SFX_Pistol1</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="issaczhuang.muzzleflash">
+				<def>MF_StandardMuzzleFalshTwo</def>
+				<drawSize>(0.7,0.7)</drawSize>
+				<offsets>
+					<li>(0.46,0.18)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+		<generateCommonality>0.0125</generateCommonality> <!-- Rare -->
+	</ThingDef>
+
+</Defs>

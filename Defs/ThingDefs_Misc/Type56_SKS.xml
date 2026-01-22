@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="CGF1_MWP_SemiAutoRifle_T2">
+		<defName>CGF1_MWP_Type56_SKS_</defName>
+		<label>Type 56 SKS</label>
+		<description>Caliber: 7.62x39mm. 10-round internal mag. Semi-Automatic.
+		
+The Type 56 is a copy of the Soviet SKS rifle designed by Sergei Simonov. Adopted in the 1950s and produced under license, the Type 56 SKS became the standard military arm of the People's Liberation Army even while a copy of the AK (also called the Type 56) was under production. These Chinese SKs rifles were produced for many decades, and there are dozens of possible variations that can be found due to refinements and adjustments that were made over the years - overall, however, the Type 56 SKS is near identical to its Soviet basis. Throughout the Cold War and into the present, Type 56 SKS guns were widely exported, and continue to show up in conflicts to this very day.</description>
+		<graphicData>
+			<texPath>CGF1/Gun/Type56_SKS</texPath>
+			<drawSize>1.00</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T8_AtomicAgeFirearms</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>60</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>3.85</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>40</equippedAngleOffset>
+		<weaponTags>
+			<li>CGF1_Rifle_Civilian</li>
+			<li>CGF1_Rifle_Military</li>
+		</weaponTags>
+		<tradeTags>
+			<li>CGF1_GunsGalore_ColdWarChinaVietnam</li>
+			<li>CGF1_GunsGalore_ColdWarChinaVietnam_Rifle</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bullet_762x39mm_Rifle</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>30.9</range>
+				<soundCast>CGF1_MWP_SFX_Rifle_Semi5</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="issaczhuang.muzzleflash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.8,0.8)</drawSize>
+				<offsets>
+					<li>(0.56,0.06)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+		<generateCommonality>1.5</generateCommonality> <!-- Everywhere -->
+	</ThingDef>
+	
+	<ThingDef ParentName="CGF1_MWP_SemiAutoRifle_T2">
+		<defName>CGF1_MWP_Type56_SKS_Bayonet_</defName>
+		<label>Type 56 SKS (Bayonet)</label>
+		<description>Caliber: 7.62x39mm. 10-round internal mag. Semi-Automatic.
+		
+The Type 56 is a copy of the Soviet SKS rifle designed by Sergei Simonov. Adopted in the 1950s and produced under license, the Type 56 SKS became the standard military arm of the People's Liberation Army even while a copy of the AK (also called the Type 56) was under production. These Chinese SKs rifles were produced for many decades, and there are dozens of possible variations that can be found due to refinements and adjustments that were made over the years - overall, however, the Type 56 SKS is near identical to its Soviet basis. Throughout the Cold War and into the present, Type 56 SKS guns were widely exported, and continue to show up in conflicts to this very day.</description>
+		<graphicData>
+			<texPath>CGF1/Gun/UP/Type56_SKS_Bayonet</texPath>
+			<drawSize>1.25</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<recipeUsers>
+				<li>CGF1_MWP_Building_Gunsmith</li>
+			</recipeUsers>
+			<researchPrerequisite>CGF1_MWP_Research_T8_AtomicAgeFirearms</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Steel>60</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>3.85</Mass>
+			<AccuracyTouch>0.60</AccuracyTouch>
+			<AccuracyShort>0.70</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.55</AccuracyLong>
+			<RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+		</statBases>
+		<equippedAngleOffset>40</equippedAngleOffset>
+		<weaponTags>
+			<li>CGF1_Rifle_Civilian</li>
+			<li>CGF1_Rifle_Military</li>
+		</weaponTags>
+		<tradeTags Inherit="False">
+			<li>CGF1_GunsGalore_NoSpawn</li>
+		</tradeTags>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>CGF1_MWP_Bullet_762x39mm_Rifle</defaultProjectile>
+				<warmupTime>1</warmupTime>
+				<range>30.9</range>
+				<soundCast>CGF1_MWP_SFX_Rifle_Semi5</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>bayonet</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<modExtensions>
+			<li Class="MuzzleFlash.MuzzleFlashProps" MayRequire="issaczhuang.muzzleflash">
+				<def>MF_StandardMuzzleFalsh</def>
+				<drawSize>(0.8,0.8)</drawSize>
+				<offsets>
+					<li>(0.56,0.09)</li>
+				</offsets>
+			</li>
+		</modExtensions>
+		<generateCommonality>0.5</generateCommonality> <!-- Abundant -->
+		<thingSetMakerTags Inherit="False"/>
+	</ThingDef>
+	
+</Defs>
