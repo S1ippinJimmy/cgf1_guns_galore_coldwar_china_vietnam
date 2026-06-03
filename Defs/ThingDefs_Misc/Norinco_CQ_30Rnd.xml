@@ -2,13 +2,13 @@
 <Defs>
 
 	<ThingDef ParentName="CGF1_MWP_AssaultRifle_T1">
-		<defName>CGF1_MWP_Norinco_CQ_</defName>
-		<label>Norinco CQ</label>
-		<description>Caliber: 5.56x45mm NATO. 20-round detachable mag. Select-Fire.
+		<defName>CGF1_MWP_Norinco_CQ_30Rnd_</defName>
+		<label>Norinco CQ (30Rnd)</label>
+		<description>Caliber: 5.56x45mm NATO. 30-round detachable mag. Select-Fire.
 		
 The Norinco CQ is the export designation for a series of AR-15-derived rifles designed and built in China. The first AR-style rifles in China were reverse engineered from American M16s captured during the Vietnam War, and many derivatives have been produced in the country ever since then. This CQ is an early variant - outwardly very similar to the original M16 rifle (as it lacks a forward assist), but with a modified stock, pistol grip, handguard, front sight, and flash hider.</description>
 		<graphicData>
-			<texPath>CGF1/Gun/Norinco_CQ</texPath>
+			<texPath>CGF1/Gun/Norinco_CQ_30Rnd</texPath>
 			<drawSize>1.03</drawSize>
 		</graphicData>
 		<recipeMaker>
@@ -26,7 +26,7 @@ The Norinco CQ is the export designation for a series of AR-15-derived rifles de
 		</costList>
 		<statBases>
 			<WorkToMake>40000</WorkToMake>
-			<Mass>3.6</Mass>
+			<Mass>3.65</Mass>
 			<AccuracyTouch>0.60</AccuracyTouch>
 			<AccuracyShort>0.60</AccuracyShort>
 			<AccuracyMedium>0.55</AccuracyMedium>
