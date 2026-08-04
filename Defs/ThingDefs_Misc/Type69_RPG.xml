@@ -51,7 +51,7 @@ The Type 69 rocket-propelled grenade launcher is a Chinese copy of the Soviet RP
 				<ai_AvoidFriendlyFireRadius>5</ai_AvoidFriendlyFireRadius>
 				<range>35.9</range>
 				<soundCast>CGF1_MWP_SFX_Launcher_RPG</soundCast>
-				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<soundCastTail>CGF1_MWP_SFX_Dist_RPG</soundCastTail>
 				<onlyManualCast>true</onlyManualCast>
 				<targetParams>
 					<canTargetLocations>true</canTargetLocations>
