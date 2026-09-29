@@ -82,7 +82,7 @@ This is a Belgian FN Model D converted to 7.62x39mm caliber, feeding from AK-typ
 				<def>MF_StandardMuzzleFalshThree</def>
 				<drawSize>(0.7,0.7)</drawSize>
 				<offsets>
-					<li>(0.70,0.05)</li>
+					<li>(0.70,0.07)</li>
 				</offsets>
 			</li>
 		</modExtensions>

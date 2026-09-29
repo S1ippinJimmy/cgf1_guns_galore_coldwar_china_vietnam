@@ -82,7 +82,7 @@ This is an American M1918A2 Browning Automatic Rifle (BAR) converted to 7.62x39m
 				<def>MF_StandardMuzzleFalshThree</def>
 				<drawSize>(0.7,0.7)</drawSize>
 				<offsets>
-					<li>(0.70,0.05)</li>
+					<li>(0.70,0.07)</li>
 				</offsets>
 			</li>
 		</modExtensions>
